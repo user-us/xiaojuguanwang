@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>首页</title>
+	<!--轮播图css-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--轮播图js-->
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <!--本页面CSS↓-->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div class="nav">
+	<div class="nas">
+		<img src="images/logo.png"/>
+		<nav>
+			<li class="checked"><a href="">首页</a></li>
+			<li><a href="">线路推荐</a></li>
+			<li><a href="">精选营地</a></li>
+			<li><a href="">精品车型</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">联系我们</a></li>
+		</nav>
+	</div>
+</div>
+<!--导航栏-->
+<!--banner-->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/banner1.jpg"/></div>
+    <div class="swiper-slide"><img src="images/banner2.jpg"/></div>
+    <div class="swiper-slide"><img src="images/banner1.jpg"/></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+	pagination: {
+	    el: '.swiper-pagination',
+	  },
+	  autoplay : {
+	    delay:3000
+	  },
+	  loop: true,
+	  spaceBetween: 30,
+})
+</script>
+<!--banner-->
+<!--内容-->
+<div class="hot_con">
+	<div class="hotdl">
+		<dl>
+			<dt><img src="images/shan.png"/></dt>
+			<dd>热门推荐</dd>
+			<dd>Hot</dd>
+		</dl>
+	</div>
+	<div class="line_h"><span class="checked">线路</span><span>营地</span><span>车型</span></div>
+	<script type="text/javascript">
+	$(function(){
+		$(".tebbot .qie:gt(0)").hide();
+		$(".line_h span").click(function(){
+			$(this).addClass("checked").siblings().removeClass("checked");
+			//获取序列号
+			index=$(this).index();
+			$(".tebbot .qie").eq(index).show().siblings().hide();
+		})
+	})
+	</script>
+	<div class="tebbot">
+		<div class="qie">
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span>1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<div class="clear"></div>
+			<div class="more"><a href="">查看更多</a></div>
+		</div>
+		<div class="qie">
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<img src="images/star.png"/>
+						<span><img src="images/address.png"/>北京  •  1528人去过</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<div class="clear"></div>
+			<div class="more"><a href="">查看更多</a></div>
+		</div>
+		<div class="qie">
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<dl>
+				<a href="">
+					<dt><img src="images/img1.png"/></dt>
+					<dd class="tedltit">西宁+青海湖+拉萨+日喀则+羊卓雍措纳措木措8日7晚</dd>
+					<dd class="ddstar">
+						<ul>
+							<li class="ddbg1">冰箱</li>
+							<li class="ddbg2">卫生间</li>
+							<li class="ddbg1">水槽</li>
+						</ul>
+						<span>出租182次</span>
+					</dd>
+				</a>
+				
+			</dl>
+			<div class="clear"></div>
+			<div class="more"><a href="">查看更多</a></div>
+		</div>
+	</div>
+</div>
+<div class="guanggao1"><img src="images/guanggao1.jpg"/></div>
+<div class="hot_con">
+	<div class="hotdl">
+		<dl>
+			<dt><img src="images/carlife.png" class="cars"/></dt>
+			<dd>轻松租赁房车</dd>
+			<dd>Rental Car</dd>
+		</dl>
+	</div>
+	<div class="steps"><img src="images/steps.png"/></div>
+</div>
+<div class="guanggao1"><img src="images/guanggao2.png"/></div>
+<div class="hot_con">
+	<div class="hotdl">
+		<dl>
+			<dt><img src="images/strategy.png" class="strategy"/></dt>
+			<dd>游玩攻略</dd>
+			<dd>Traveler Strategy</dd>
+		</dl>
+	</div>
+	<div class="stracon">
+		<a href=""><div class="stimg"><img src="images/img2.png"/></div></a>
+		<a href="">
+			<div class="st_con">
+				<p class="st_time">10-30</p>
+				<p class="st_tit">以梦为马，不负韶华</p>
+				<p class="st_cons">清晨，匆匆收拾完行李，便跑到蒙古包外享受阳光和新鲜的空气，透露着淡淡的青草气息，广袤的草原是一剂最好的醒脑咖啡，纯天然无污染。吃完特色蒙族早餐便开始赶路，这时房车旅行的优越性就展露无遗，足够宽阔的空间，舒适的座椅，再打开车载液晶电视，来一部自己喜欢的电影，这段旅途只能用完美来形容。</p>
+			</div>
+		</a>
+		<a href=""><div class="stimg"><img src="images/img4.png"/></div></a>
+		<a href="">
+			<div class="st_con">
+				<p class="st_time">10-30</p>
+				<p class="st_tit">以梦为马，不负韶华</p>
+				<p class="st_cons">清晨，匆匆收拾完行李，便跑到蒙古包外享受阳光和新鲜的空气，透露着淡淡的青草气息，广袤的草原是一剂最好的醒脑咖啡，纯天然无污染。吃完特色蒙族早餐便开始赶路，这时房车旅行的优越性就展露无遗，足够宽阔的空间，舒适的座椅，再打开车载液晶电视，来一部自己喜欢的电影，这段旅途只能用完美来形容。</p>
+			</div>
+		</a>
+		<a href=""><div class="stimg"><img src="images/img3.png"/></div></a>
+		<a href="">
+			<div class="st_con">
+				<p class="st_time">10-30</p>
+				<p class="st_tit">以梦为马，不负韶华</p>
+				<p class="st_cons">清晨，匆匆收拾完行李，便跑到蒙古包外享受阳光和新鲜的空气，透露着淡淡的青草气息，广袤的草原是一剂最好的醒脑咖啡，纯天然无污染。吃完特色蒙族早餐便开始赶路，这时房车旅行的优越性就展露无遗，足够宽阔的空间，舒适的座椅，再打开车载液晶电视，来一部自己喜欢的电影，这段旅途只能用完美来形容。</p>
+			</div>
+		</a>
+		
+	</div>
+</div>
+<!--内容-->
+<!--底部-->
+<footer>
+	<div class="foot">
+		<div class="foot_left">
+			<div class="lianxi">
+				<p class="liantit">联系方式</p>
+				<p>电话：010-69557550</p>
+				<p>手机：13521043455 / 13811334772</p>
+				<p>邮箱：website@qq.com</p>
+				<p>地址：北京市建外SOHO东区2号楼</p>
+			</div>
+			<div class="kefu">
+				<p class="liantit">客服电话</p>
+				<p class="phone">69557550</p>
+				<p>周一至周六9:00-18:00</p>
+			</div>
+		</div>
+		<div class="foot_right">
+			<dl>
+				<dt>官方微博</dt>
+				<dd><img src="images/erweima.png"/></dd>
+			</dl>
+			<dl>
+				<dt>微信小程序</dt>
+				<dd><img src="images/erweima.png"/></dd>
+			</dl>
+			<dl>
+				<dt>微信公众号</dt>
+				<dd><img src="images/erweima.png"/></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="clear"></div>
+</footer>
+<div class="foot_last">Copyright 2018 天津小桔房车旅游有限公司. All Righs Reserved 沪ICP备 17049987号</div>	
+<!--底部-->
+</body>
+</html>
